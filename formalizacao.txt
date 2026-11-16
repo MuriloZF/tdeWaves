@@ -5,11 +5,11 @@ Grupo: Adryan Costa Silva, Hassan Ali El Gazouini, Hussein Ali El Gazouini, Muri
 Estados = {INICIADOR, OCIOSO, ATIVO, OK}
 	S_inicial = {INICIADOR, OCIOSO}
 	S_final = {OK}
-Restrições = {R união {UI}}
+Restrições = {TR, CN, BL, UI}
 
 Iniciador
 	Espontaneamente:
-		estado = ATIVO
+		estado = INICIADOR
 		entrada = ()
 		aguardando = N(x)
 		envia <EXPLORAR> a N(x)
